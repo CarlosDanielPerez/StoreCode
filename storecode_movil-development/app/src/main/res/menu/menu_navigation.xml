@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/notificaciones"
+            android:checked="false"
+            android:icon="@drawable/ic_notification"
+            android:title="Notificaciones"
+            />
+
+        <item
+            android:id="@+id/perfil"
+            android:checked="false"
+            android:icon="@drawable/ic_person"
+            android:title="Perfil" />
+
+        <item
+            android:id="@+id/soporte_tecnico"
+            android:checked="false"
+            android:icon="@drawable/ic_settings"
+            android:title="Soporte Técnico" />
+
+    </group>
+</menu>

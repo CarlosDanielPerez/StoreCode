@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeNoLogedFragment">
+
+    <fragment
+        android:id="@+id/navHomeNoLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.HomeNoLogedFragment"
+        android:label="fragment_home_no_loged"
+        tools:layout="@layout/fragment_home_no_loged" />
+
+    <!--<fragment
+        android:id="@+id/navCartNoLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.CartNoLogedFragment"
+        android:label="fragment_cart_no_loged"
+        tools:layout="@layout/fragment_cart_no_loged" />-->
+
+    <fragment
+        android:id="@+id/navProfileNoLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.ProfileNoLogedFragment"
+        android:label="fragment_profile_no_loged"
+        tools:layout="@layout/fragment_profile_no_loged" >
+        <action
+            android:id="@+id/toLoginActivity"
+            app:destination="@id/loginActivity"
+            app:enterAnim="@anim/fade_in"
+
+            app:popExitAnim="@anim/fade_in"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.storecode_android.view.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login">
+
+
+
+    </activity>
+
+
+</navigation>

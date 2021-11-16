@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".view.fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".008"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".08"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/a5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbuttun"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="@dimen/a250px"
+                android:layout_height="@dimen/a250px"
+                android:src="@drawable/logo_fondoazul"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo_desglose" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".13"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/a5dp"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/TextInicio"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:text="@string/iniciar_sesion"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/a28dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/telcel_nova_media"
+                tools:ignore="NestedWeights,SpUsage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/a5dp"
+            >
+
+            <TextView
+                android:id="@+id/textSingle"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:text="@string/message_sesion"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/a14sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/telcel_nova_media"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/blanco"
+                android:backgroundTint="@color/blanco"
+                android:hint="@string/email_usuario"
+                >
+
+                <!--android:id="@+id/et_no_empleado"-->
+                <EditText
+                    android:id="@+id/editTextUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/blanco"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="LabelFor,SpUsage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/blanco"
+                android:backgroundTint="@color/blanco"
+                android:hint="@string/usuario_pass"
+                android:fontFamily="@font/telcel_nova_media_otf"
+                >
+
+                <com.subhrajyoti.passwordview.PasswordView
+                    android:id="@+id/editTextPass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/blanco"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    app:eyeTint="@color/blanco"
+                    app:strikeThrough="true"
+                    tools:ignore="SpUsage" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+            <Switch
+                android:id="@+id/inicio_sesion_switch"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_h3"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/telcel_nova_media"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="@dimen/padding_h3"
+                android:text="@string/remember_user"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/text_layout_line"
+                android:textSize="@dimen/text_h2"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:fontFamily="@font/telcel_nova_media_otf"
+                android:radius="@dimen/margin_h4"
+                android:text="@string/button_sesion"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/text_h2"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blanco"
+                android:fontFamily="@font/telcel_nova_media_otf"
+                android:radius="@dimen/margin_h4"
+                android:text="Crear cuenta"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/text_h2"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/version_app"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:text="@string/version_name"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/a14dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/a1dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".05"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/forget_pass"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/a10dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".05"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

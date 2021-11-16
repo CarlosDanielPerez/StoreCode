@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.DataMercadoPagoFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnReturn"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Salir"
+                android:background="@color/white"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lato"
+                android:text="Datos de mercado pago"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/textTitle_24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginHorizontal="@dimen/a8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/negro"
+                    android:backgroundTint="@color/gris_claro"
+                    android:hint="Public key de mercado pago"
+                    >
+
+                    <!--android:id="@+id/et_no_empleado"-->
+                    <EditText
+                        android:id="@+id/editTextPublicKey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="80"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_h3"
+                        android:textColor="@color/negro"
+                        android:backgroundTint="@color/text_layout_line"
+                        android:textSize="@dimen/text_h2"
+                        tools:ignore="LabelFor,SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginHorizontal="@dimen/a8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/negro"
+                    android:backgroundTint="@color/gris_claro"
+                    android:hint="Access token de mercado pago"
+                    >
+
+                    <!--android:id="@+id/et_no_empleado"-->
+                    <EditText
+                        android:id="@+id/editTextAccessToken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="80"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_h3"
+                        android:textColor="@color/negro"
+                        android:backgroundTint="@color/text_layout_line"
+                        android:textSize="@dimen/text_h2"
+                        tools:ignore="LabelFor,SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_marginHorizontal="@dimen/a8dp"
+                    android:id="@+id/btnGuardarDatosMP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorBackground"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:radius="@dimen/margin_h4"
+                    android:text="Guardar datos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+                <!--android:id="@+id/et_no_empleado"-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

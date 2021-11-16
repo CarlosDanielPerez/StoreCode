@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBackground">#224EAE</color>
+    <color name="colorPrimary">#002278</color>
+    <color name="colorPrimaryDark">#0028b4</color>
+    <color name="colorAccent">#42ABC7</color>
+    <color name="azul_fondo_framgent">#00338D</color>
+    <color name="azul_fondo_layout_false">#0f3d99</color>
+    <color name="azul_fondo_layout_true">#244eae</color>
+    <color name="azul_fondo_button_drawer_false">#00338D</color>
+    <color name="azul_fondo_button_drawer_true">#0f3d99</color>
+    <color name="azul_drawer">#00338D</color>
+    <color name="azul_carta_2">#039be5</color>
+    <color name="azul_sliding_off">#535bf4</color>
+    <color name="azul_sliding_on">#2b3087</color>
+    <color name="gris_oscuro">#424949</color>
+    <color name="gris">#cecece</color>
+    <color name="gris2">#acacac</color>
+    <color name="blanco">#ffffff</color>
+    <color name="blanco_azulado">#b8eaf7</color>
+    <color name="blanco_azulado2">#d0f3fc</color>
+    <color name="blanco_azulado3">#E2F7FC</color>
+    <color name="gris_claro">#f5f7fb</color>
+    <color name="gris_claro2">#e0e4ed</color>
+    <color name="blanco_gris">#b1b1b1</color>
+    <color name="azul_versiones">#52c5e1</color>
+    <color name="azul_versiones_pressed">#42ABC7</color>
+    <color name="azul_versiones_pressed_on">#1fa5c7</color>
+    <color name="azul_claro1">#66cfe9</color>
+    <color name="azul_claro1_50">#5066cfe9</color>
+    <color name="rojo_alert_dialog">#B53333</color>
+    <color name="mostaza_alert_dialog">#ffc857</color>
+    <color name="negro">#000000</color>
+    <color name="naranja_precio">#ff8126</color>
+    <color name="azul_onboarding_instrucciones">#338394</color>
+    <color name="azul_100">#c0c8e6</color>
+    <color name="azul_stroke">#6685bb</color>
+    <color name="rojo1">#ab0401</color>
+    <color name="rojo2">#dc3436</color>
+    <color name="fondo_footer">#e5e8f4</color>
+    <color name="blanco_legal">#e6e9f5</color>
+    <color name="azul_legal">#039be5</color>
+    <color name="fondo_azul_legal">#e1f5fe</color>
+    <color name="naranja_card_4">#e7792b</color>
+    <color name="azul_marin">#00338d</color>
+    <color name="azul_barra_separadora">#67c3ef</color>
+    <color name="text_layout_line">#FF039BE5</color>
+
+    <color name="search_view">#E6E9F5</color>
+    <color name="backgroud_quitar_preciador">#00000000</color>
+
+
+    // añadido por erick
+    <color name="a00338D">#00338D</color>
+    <color name="azul_00338D">#00338D</color>
+    <color name="azul_E6E9F5">#E6E9F5</color>
+    <color name="aqua_E6E9F5">#338394</color>
+    <color name="azulTelcel">#00338D</color>
+    <color name="aqua_338394">#338394</color>
+    <color name="rojo_dc3436">#dc3436</color>
+</resources>

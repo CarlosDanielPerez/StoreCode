@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_h4"
+    >
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/a8dp"
+        android:background="@drawable/shape_background_cardview"
+        >
+
+
+        <!--android:background="@drawable/btn_item_grid_marca"-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/padding_h3"
+            >
+
+            <ImageView
+                android:id="@+id/ivModelo"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/a100dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo_fondoazul"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:layout_marginTop="@dimen/a8dp"
+                android:visibility="visible"
+                />
+
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 100.0"
+
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="@dimen/a8dp"
+                android:visibility="visible"
+                />
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:layout_marginTop="@dimen/a8dp"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

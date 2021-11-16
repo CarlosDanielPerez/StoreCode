@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.UpdateProductFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnReturn"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Salir"
+
+                android:background="@color/white"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lato"
+                android:text="Actualizar producto"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/textTitle_24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivPhotoProduct"
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/no_image"
+                ></ImageView>
+
+            <Button
+                android:id="@+id/btnChooseImage"
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_marginVertical="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar imagen"
+                android:textColor="@color/white"
+                android:background="@color/colorBackground"
+                ></Button>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/negro"
+                android:backgroundTint="@color/gris_claro"
+                android:hint="Nombre del producto"
+                >
+
+                <!--android:id="@+id/et_no_empleado"-->
+                <EditText
+                    android:id="@+id/editTextNameProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="LabelFor,SpUsage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/negro"
+                android:backgroundTint="@color/gris_claro"
+                android:hint="Descripción del producto"
+                >
+
+                <!--android:id="@+id/et_no_empleado"-->
+                <EditText
+                    android:id="@+id/editTextDescriptionProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="LabelFor,SpUsage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/negro"
+                android:backgroundTint="@color/gris_claro"
+                android:hint="Precio del producto"
+                >
+
+                <!--android:id="@+id/et_no_empleado"-->
+                <EditText
+                    android:id="@+id/editTextPriceProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="LabelFor,SpUsage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColorHint="@color/negro"
+                android:backgroundTint="@color/gris_claro"
+                android:hint="Cantidad de producto"
+                >
+
+                <!--android:id="@+id/et_no_empleado"-->
+                <EditText
+                    android:id="@+id/editTextQuantityProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_h3"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/text_layout_line"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="LabelFor,SpUsage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_marginHorizontal="@dimen/a8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textDescriptions"
+                    android:text="Selecciona una categoria"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/azul_00338D"
+                    android:fontFamily="@font/lato"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBrand"
+                    android:layout_marginHorizontal="@dimen/a8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textDescriptions"
+                    android:text="Selecciona una marca"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/azul_00338D"
+                    android:fontFamily="@font/lato"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/brand_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginHorizontal="@dimen/a8dp"
+                android:layout_marginVertical="@dimen/a8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar producto"
+                android:textColor="@color/white"
+                android:background="@color/colorBackground"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

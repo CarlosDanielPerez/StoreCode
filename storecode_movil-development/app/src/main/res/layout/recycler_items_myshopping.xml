@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_h4"
+    >
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/a8dp"
+        android:background="@drawable/shape_background_cardview"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/ivModeloMyShopping"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/a100dp"
+                android:layout_weight="1"
+                android:src="@drawable/no_image"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvDateSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de venta: "
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textColor="@color/negro"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvClaveTransaccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clave Transacción: "
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textColor="@color/negro"
+                android:visibility="visible"
+                />
+            <TextView
+            android:fontFamily="@font/lato"
+            android:id="@+id/tvNameOnSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:textColor="@color/negro"
+            android:layout_marginTop="@dimen/a8dp"
+            android:visibility="visible"
+            />
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvDescriptionMyShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion del producto"
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textColor="@color/negro"
+                android:visibility="visible"
+                />
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvPriceOnSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio del producto"
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBackground"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvQuantityMyShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textColor="@color/negro"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tvTotalSelled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Vendido: "
+                android:gravity="start"
+                android:textSize="14sp"
+                android:textColor="@color/negro"
+                android:visibility="visible"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnAddImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_image"
+                ></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

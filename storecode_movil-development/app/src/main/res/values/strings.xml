@@ -1,0 +1,608 @@
+<resources>
+    <string name="app_name">Storecode</string>
+
+
+    <!--
+    Strings para la pantalla "Detalle del producto"
+    -->
+    <string name="name_product">Nombre del producto: </string>
+    <string name="description_product">Descripción: </string>
+    <string name="price_product">Precio: $</string>
+    <string name="stock_products">Productos existentes: </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_tv_elegir_preciador">Elige el preciador  que vas a colocar</string>
+    <string name="drawer_configura_preciador">Configura el preciador de forma sencilla</string>
+    <string name="fragment_boton_unico_preciador">Único</string>
+    <string name="fragment_boton_multiples_precios">Múltiple</string>
+    <string name="fragment_boton_configurar">Configurar</string>
+    <string name="activity_preciador_unico_selecionar_datos">Selecciona los datos del equipo para generar su  preciador</string>
+    <string name="alert_dialog_tablet">Estás intentando ingresar desde un celular, para colocar un preciador múltiple es necesario ingresar desde una tablet.</string>
+    <string name="alert_dialog_alertacac">Sólo podrás generar preciadores de los equipos registrados en tu centro, en caso de ser solicitado otro, solicita el cambio en LDAP.</string>
+    <string name="activity_vistaprevia_confimacion">Confirma que la información sea correcta de lo contrario regresa.</string>
+    <string name="consulta_promociones">Consulta las promociones vigentes en www.telcel.com/promociones. Precios publicados incluyen el 16% de IVA.</string>
+    <string name="coloca_dispositivos">Debes colocar por lo menos un dispositivo para poder construir el estante</string>
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="preciador1">Preciador1</string>
+    <string name="preciador2">Preciador2</string>
+    <string name="preciador_telcel">Preciador_telcel</string>
+    <string name="preciador3">Preciador3</string>
+    <string name="preciador4">Preciador4</string>
+    <string name="preciador_publicidad">Preciador_publicidad</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+
+    <string name="descargar_apk_title_precio">Descargando Precio Inteligente</string>
+    <string name="descargar_apk_precio">Por favor espera mientras se descarga la aplicación Precio Inteligente</string>
+
+    <string name="descargar_apk_title_sma">Descargando SMA</string>
+    <string name="descargar_apk_sma">Por favor espera mientras se descarga la aplicación Tapps</string>
+
+    <string name="descargar_video_title">Descargando Multimedia</string>
+    <string name="descargar_videos">Por favor espera mientras se descargan los contenidos</string>
+    <string name="ingresar_credenciales">Por seguridad debes confirmar\n tu contraseña</string>
+    <string name="olvidaste_tu_contraseña_land">Si olvidaste tu contraseña ingresa a https://idm.telcel.com/identity o escribe un correo a \n desaweb.ing@mail.telcel.com</string>
+    <string name="olvidaste_tu_contraseña_port">Si olvidaste tu contraseña ingresa a https://idm.telcel.com/identity o escribe un correo a desaweb.ing@mail.telcel.com</string>
+    <string name="por_seguridad">Por su seguridad debe confirmar tu contraseña</string>
+    <string name="indicaciones_preciador">Al seleccionar continuar se cerrará el configurador. Si requieres modificarlo deberás ingresar nuevamente a la aplicación.</string>
+    <string name="onboarding_tittle1">El precio en el celular</string>
+    <string name="onboarding_tittle2">Todos los precios en una tableta</string>
+    <string name="onboarding_tittle3">Precios siempre vigentes</string>
+    <string name="onboarding_tittle4">Modo Retail</string>
+    <string name="onboarding_instrucciones1">Olvídate de cortar e imprimir. Ahora es más fácil colocar los preciadores.</string>
+    <string name="onboarding_instrucciones2">Muestra los precios de todos los celulares de una mesa o vitrina con una tableta.</string>
+    <string name="onboarding_instrucciones3">Configura el preciador una vez y los costos se actualizarán en automático.</string>
+    <string name="onboarding_instrucciones4">Podrás evitar modificaciones en la configuración del equipo por parte de los clientes, mostrando siempre el Precio Inteligente.</string>
+
+    <string name="aviso_legal">El pago inicial corresponde a la diferencia a pagar al adquirir el equipo con el Plan Telcel Max Sin Límite 5000 sujeto a un plazo mínimo de contratación de 24 meses. *La cantidad de $170.72 corresponde al cargo mensual cuando el Cliente solicita el financiamiento del Pago Inicial y paga de contado un enganche de $2,456.47. El monto de enganche podrá variar en función del historial crediticio y/o de pago del cliente. FINANCIAMIENTO SUJETO A APROBACIÓN Y EVALUACIÓN DE CAPACIDAD DE PAGO. Total financiado: $4,097.38. Pago Inicial Total financiado: $6,553.85. Cargo Mensual por Servicio (Renta) Plan Telcel Max Sin Límite 5000: $499. Cargo Mensual por Equipo $221.00. Aplica bonificación si se realiza el pago oportuno de Factura. Precios publicados incluyen 16% de IVA.</string>
+    <string name="soporte_titulo">Soporte</string>
+    <string name="soporte_descripcion"><![CDATA[<b>Si tienes algún problema con el funcionamiento de la aplicación comunícate con soporte técnico a través de <b><font color=#66CFE9>Service Desk</font></b> para levantar un ticket. El tiempo de respuesta es de 24 horas máximo.</b>]]></string>
+    <string name="guia_titulo">Guía de uso</string>
+    <string name="guia_descripcion">Sección en construcción. \nEstamos trabajando para brindarte la mejor experiencia.</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--MENSAJES DEL PRECIADOR ÚNICO-->
+    <string name="completa_datos_en_orden_title">Completa los datos en orden</string>
+    <string name="completa_datos_en_orden_desc">Debes completar los datos de arriba hacia abajo</string>
+    <string name="completa_todos_los_datos_title">Completa todos \nlos datos</string>
+    <string name="completa_todos_los_datos_desc">Para generar el preciador debes completar todos los datos que solicita el equipo</string>
+
+    <!--NOMBRE DE BOTONES-->
+    <string name="button_marca">Marca</string>
+    <string name="button_modelo">Modelo</string>
+    <string name="button_color">Color (variante)</string>
+    <string name="button_plan">Plan</string>
+
+
+    <!--MENSAJES DE LA APLICACIÓN-->
+    <string name="msj_error_en_aplicacion">Error en la aplicación, contacte al soporte</string>
+    <string name="msj_password_incorrecto">Usuario o password incorrectos</string>
+
+    <string name="footer">Consulta las promociones vigentes en www.telce.com/promociones. Precios publicados incluyen el 16% de IVA</string>
+
+    <!-- strings addded by erick -->
+    <!-- generales -->
+    <string name="boton_entendido">ENTENDIDO</string>
+    <string name="boton_continuar">CONTINUAR</string>
+    <string name="boton_cancelar">CANCELAR</string>
+    <string name="boton_salir">SALIR</string>
+    <string name="boton_instalar">INSTALAR</string>
+    <string name="boton_crear">CREAR</string>
+    <string name="boton_eliminar">ELIMINAR</string>
+    <string name="dummy_text">"Lorem ipsum irure  pariatur.  officia deserunt mollit anim id est laborum."</string>
+
+
+    <!-- alert_dialog_mesa_agregar_celulares -->
+    <string name="ad_agregar_cel_titulo">Agregar celulares</string>
+    <string name="ad_agregar_cel_mensaje">Para agregar nuevos celulares el supervisor o\n analista deberá ingresar a http://serviciotecnico:\n8070/mesaExp/ y darlos de alta.</string>
+    <string name="ad_agregar_cel_boton">ENTENDIDO</string>
+
+
+    <!-- alertdialog_mesalista -->
+    <string name="ad_mesalista_titulo">¡La mesa está lista!</string>
+    <string name="ad_estante_listo_mensaje">Al seleccionar continuar se cerrará el\n configurador. Si requires modificarla deberás\n ingresar nuevamente a la aplicación.</string>
+
+
+    <!-- alert_dialog_vitrina_lista -->
+    <string name="ad_vitrinalista_titulo">¡La vitrina está lista!</string>
+
+
+    <!-- alertdialog_nombrarvitrina -->
+    <string name="ad_nombrarvitrina_titulo">Vitrina hexagonal nueva</string>
+    <string name="ad_nombrarvitrina_mensaje">Escribe un nombre para tu nuevo exhibidor</string>
+
+
+    <!-- alertdialog_eliminarcelular -->
+    <string name="ad_eliminarcelular_titulo">Eliminar celular</string>
+    <string name="ad_eliminarcelular_nivel">Eliminar nivel</string>
+    <string name="ad_eliminarcelular_mensaje">Si continuas se perderá la configuración y la \n información del celular</string>
+    <string name="ad_eliminarnivel_mensaje_desc">Si continuas se perderá la configuración y la \n información del nivel</string>
+
+    <!-- alertdialog_eliminar_vitrina -->
+    <string name="ad_eliminar_vitrina_titulo">Eliminar vitrina</string>
+    <string name="ad_eliminar_vitrina_mensaje">Si continuas se perderá la configuración y la \n información de la vitrina</string>
+
+
+    <!-- alert_dialog_vitrina_eliminar_nivel -->
+    <string name="ad_eliminarnivel_titulo">Eliminar nivel</string>
+    <string name="ad_eliminarnivel_mensaje">Si continuas se perderá la configuración y la \n información del celular</string>
+
+
+    <!-- alertdialog_salir_vitrina -->
+    <string name="ad_salirvitrinahexa_titulo">Configuración de Vitrina Hexagonal</string>
+    <string name="ad_salirmesa_titulo">Configuración de Mesa</string>
+    <string name="ad_salirvitrinacuadrada_titulo">Configuración de Vitrina Rectangular</string>
+    <string name="ad_salirvitrinahexa_mensaje">¿Desea salir de la configuración de la vitrina hexagonal?</string>
+    <string name="ad_salirmesa_mensaje">¿Desea salir de la configuración de la mesa?</string>
+    <string name="ad_salirvitrinacuadrada_mensaje">¿Desea salir de la configuración de la vitrina rectangular?</string>
+    <string name="ad_salirmesacuadrada_mensaje">¿Desea salir de la configuración de la mesa?</string>
+
+
+    <string name="alert_dialog_colocar_equipo">Para generar el preciador debes colocar al menos un equipo.</string>
+
+
+    <string name="legal_nuevo_preciador">El pago Inicial corresponde a la diferencia a pagar al adquirir el equipo con el Plan Telcel Max Sin Límite 5000 sujeto a un plazo mínimo de contratación de 24 meses. * La cantidad de $170.72 corresponde al cargo mensual cuando el Cliente solicita el financiamento del Pago Inicial y paga de contado un enganche de $2,456.47. El monto de enganche podrá variar en función del historial crediticio y/o de pago del cliente. FINANCIAMIENTO SUJETO A APROBACIÓN Y EVALUACIÓN DE CAPACIDAD DE PAGO. Total financiado: $4,097.38. Pago Inicial Total financiado; $6,553.85. Cargo Mensual por Servicio (Renta) Plan Telcel Max Sin Límite 5000: $499. Cargo Mensual por Equipo $221.00</string>
+    <string name="alert_no_internet_title">Error de conexión</string>
+    <string name="alert_no_internet_msg">Hubo un problema con la conexión a internet</string>
+
+
+    <!-- ============================== -->
+    <!--  app/device policies examples strings     -->
+    <!-- ============================== -->
+
+    <!-- Manifest strings -->
+    <string name="activity_sample_device_admin">App/Device Admin</string>
+    <string name="sample_device_admin">Sample Device Admin</string>
+    <string name="sample_device_admin_description">Aplicación encargada de mostrar los precios de planes y servicios Telcel.</string>
+
+    <!-- Strings used in preference headers and preference definitions -->
+    <string name="header_general">General</string>
+    <string name="header_quality">Password quality</string>
+    <string name="header_expiration">Password expiration</string>
+    <string name="header_lock_wipe">Lock screen / Wipe</string>
+
+    <string name="enable_admin">Enable admin</string>
+    <string name="device_capabilities_category">Device capabilities</string>
+    <string name="disable_camera">Disable all device cameras</string>
+    <string name="disable_keyguard_widgets">Disable keyguard widgets</string>
+    <string name="disable_keyguard_secure_camera">Disable keyguard secure camera</string>
+    <string name="disable_keyguard_notifications">Disable keyguard notifications</string>
+    <string name="disable_keyguard_unredacted_notifications">Disable keyguard unredacted notifications</string>
+    <string name="disable_keyguard_trust_agents">Disable keyguard Trust Agents</string>
+    <string name="keyguard_widgets_disabled">Keyguard widgets disabled</string>
+    <string name="keyguard_widgets_enabled">Keyguard widgets enabled</string>
+    <string name="keyguard_secure_camera_disabled">Keyguard secure camera disabled</string>
+    <string name="keyguard_secure_camera_enabled">Keyguard secure camera enabled</string>
+    <string name="keyguard_secure_notifications_disabled">Keyguard notifications disabled</string>
+    <string name="keyguard_secure_notifications_enabled">Keyguard notifications enabled</string>
+    <string name="keyguard_unredacted_notifications_disabled">Keyguard unredacted notifications disabled</string>
+    <string name="keyguard_unredacted_notifications_enabled">Keyguard unredacted notifications enabled</string>
+    <string name="keyguard_trust_agents_disabled">Keyguard Trust Agents disabled</string>
+    <string name="keyguard_trust_agents_enabled">Keyguard Trust Agents enabled</string>
+    <string name="camera_disabled">Device cameras disabled</string>
+    <string name="camera_enabled">Device cameras enabled</string>
+    <string name="password_controls_category">Password controls</string>
+    <string name="set_password_user">Set password (user)</string>
+    <string name="set_password_api">Set password (via API)</string>
+    <string name="set_password_api_dialog">Set screen lock password to</string>
+    <string name="password_quality_category">Password quality</string>
+    <string name="password_quality">Password quality</string>
+    <string name="password_minimum_length">Minimum length </string>
+    <string name="password_minimum_letters">Minimum letters</string>
+    <string name="password_minimum_numeric">Minimum numeric</string>
+    <string name="password_minimum_lower_case">Minimum lower case</string>
+    <string name="password_minimum_upper_case">Minimum upper case</string>
+    <string name="password_minimum_symbols">Minimum symbols</string>
+    <string name="password_minimum_non_letter">Minimum non-letter</string>
+    <string name="password_expiration_category">Password history / Expiration</string>
+    <string name="password_history_depth">Password history depth</string>
+    <string name="password_expiration_timeout">Password expiration timeout (minutes)</string>
+    <string name="password_expiration_status">Password expiration status</string>
+    <string name="lock_wipe_category">Lock screen / Wipe</string>
+    <string name="maximum_lock_time">Max time to screen lock (minutes)</string>
+    <string name="maximum_password_fails">Max password failures for local wipe</string>
+    <string name="lock_screen">Lock screen now</string>
+    <string name="wipe_data">Wipe data</string>
+    <string name="wipe_data_summary">Wipe internal data, like a factory reset</string>
+    <string name="wipe_all_data">Wipe all data</string>
+    <string name="wipe_all_data_summary">Wipe internal data and external storage</string>
+    <string name="encryption_category">Encryption</string>
+    <string name="require_encryption">Require encryption</string>
+    <string name="activate_encryption">Activate encryption</string>
+
+    <string name="trust_agent_category">Trust Agent Features</string>
+    <string name="set_trust_agent_component_name">Enabled Component Name</string>
+    <string name="set_trust_agent_feature_list">Enabled Features (comma-separated)</string>
+
+    <!-- Strings used by DeviceAdminSample controller code -->
+    <string name="password_sufficient">Current password meets policy requirements</string>
+    <string name="password_insufficient">Current password does not meet policy requirements</string>
+    <string name="monkey_reset_password">You can\'t reset my password, you are a monkey!</string>
+    <string name="monkey_lock_screen">You can\'t lock my screen, you are a monkey!</string>
+    <string name="monkey_encryption">You can\'t start encryption, you are a monkey!</string>
+    <string name="monkey_wipe_data">You can\'t wipe my data, you are a monkey!</string>
+    <string name="monkey_ok">I admit defeat</string>
+    <string name="reset_password_warning">
+        You have just reset your screen lock password to \"%1$s\""</string>
+    <string name="reset_password_ok">Don\'t forget it</string>
+    <string name="add_admin_extra_app_text">
+        Additional text explaining why this needs to be added.</string>
+    <string name="status_local_global">Local=%1$s / Global=%2$s</string>
+    <string name="status_device_encryption">Device encryption status=%1$s</string>
+    <string name="status_days_hours_minutes">%1$sd %2$sh %3$sm</string>
+    <string name="number_format_warning">Bad value \"%1$s\""</string>
+    <string name="wipe_warning_first">This will erase all of your data.  Are you sure?</string>
+    <string name="wipe_warning_first_ok">Yes</string>
+    <string name="wipe_warning_first_no">No</string>
+    <string name="wipe_warning_second">This is not a test. This WILL erase all of your data!
+        Are you really absolutely sure?</string>
+    <string name="wipe_warning_second_full">This is not a test. This WILL erase all of your data,
+        including external storage! Are you really absolutely sure?</string>
+    <string name="wipe_warning_second_ok">BOOM!</string>
+    <string name="wipe_warning_second_no">Oops, run away!</string>
+    <string name="encryption_not_supported">Encryption is not supported on this device.</string>
+    <string name="encryption_not_supported_ok">OK</string>
+    <string name="encryption_status_unknown">unknown</string>
+    <string name="encryption_status_unsupported">unsupported</string>
+    <string name="encryption_status_inactive">inactive</string>
+    <string name="encryption_status_activating">activating</string>
+    <string name="encryption_status_active">active</string>
+    <string name="expiration_status_none">None</string>
+    <string name="expiration_status_past">Password expired %1$s ago</string>
+    <string name="expiration_status_future">Password will expire %1$s from now</string>
+
+    <!-- Strings used by the sample DeviceAdminReceiver -->
+    <string name="admin_receiver_status">Sample Device Admin: %1$s</string>
+    <string name="admin_receiver_status_enabled">enabled</string>
+    <string name="admin_receiver_status_disabled">disabled</string>
+    <string name="admin_receiver_status_pw_changed">pw changed</string>
+    <string name="admin_receiver_status_pw_failed">pw failed</string>
+    <string name="admin_receiver_status_pw_succeeded">pw succeeded</string>
+    <string name="admin_receiver_status_disable_warning">
+        This is an optional message to warn the user about disabling.</string>
+
+    <string name="plan">Plan</string>
+
+    <!--Variables Kotlin-->
+    <string-array name="tabs">
+        <item>Security</item>
+    </string-array>
+
+    <string name="draw_pattern_title">Create a new pattern</string>
+    <string name="redraw_pattern_title">Redraw to complete</string>
+    <string name="recreate_pattern_error">Pattern does not match. Redraw.</string>
+    <string name="create_pattern_successful">Successfully created.</string>
+
+    <string name="overlay_prompt_pattern_title">Draw pattern to open app</string>
+    <string name="overlay_prompt_pattern_title_wrong">Wrong pattern. Draw again.</string>
+    <string name="overlay_prompt_pattern_title_correct">Pattern correct.</string>
+    <string name="overlay_prompt_fingerprint_title">Draw pattern to open app</string>
+    <string name="overlay_prompt_fingerprint_title_wrong">Not matched. %1$s left.</string>
+    <string name="overlay_prompt_fingerprint_title_correct">Fingerprint matched!</string>
+    <string name="overlay_prompt_fingerprint_title_error">Fingerprint error! Try pattern.</string>
+
+    <string name="notification_protecting_title">Protegiendo sus aplicaciones</string>
+    <string name="notification_protecting_description">Bloquee sus aplicaciones para proteger su privacidad.</string>
+    <string name="notification_permission_need_title">Habilitar el permiso para proteccion</string>
+    <string name="notification_permission_need_description">Please enable your permissions to use app locker.</string>
+
+    <string name="permission_toast_enable_permissions">Enable permissions to use app locker</string>
+
+    <string name="header_recommended_to_lock">Recomendadas</string>
+    <string name="header_recommended_title">Bloquea las aplicaciones para evitar que se modifique </string>
+    <string name="header_recommended_title2"> su configuración.</string>
+    <string name="dimen_text">8dp</string>
+    <string name="dimen_text2">0dp</string>
+    <string name="header_all_apps">Todas</string>
+    <string name="vacio"></string>
+
+    <string name="abrirDrawer">Abrir vista Navigation</string>
+    <string name="cerrarDrawer">Cerrar vista Navigation</string>
+
+    <!--New Strings-->
+    <string name="desglose_costos">Desglose de costos</string>
+    <string name="pagos_mensuales_xx">24 pagos mensuales</string>
+    <string name="pagos_mensuales_x">12 pagos mensuales</string>
+
+    <string name="todo_desglose">TODO</string>
+    <string name="detalle_plan">Detalles del plan</string>
+    <string name="plan_sin_limites">Plan Telcel Max Sin Limites 6000</string>
+    <string name="sms_plan">SMS</string>
+    <string name="plan_ilimitado">Ilimitado</string>
+    <string name="minutos_plan">Minutos</string>
+    <string name="datos_plan">Datos</string>
+    <string name="mas_informacion">MÁS INFORMACIÓN</string>
+    <string name="nombre_dispositivo">Nombre dispositivo</string>
+
+    <string name="soporte_name">Soporte</string>
+    <string name="guia_name">Guía de uso</string>
+    <string name="update_name">Update App</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="version_name">version</string>
+    <string name="prod_name">producción</string>
+    <string name="section_name">Sección en construcción.\n estamos trabajando para brindarte la mejor experiencia.</string>
+
+    <string name="advise_name">Para acceder a la aplicación ingrese su contraseña de empleado</string>
+    <string name="advise_name_precio">!Modo Retail esta activo! \n\nPara poder ingresar, por seguridad \ndebes confirmar tu contraseña de empleado \n</string>
+    <string name="no_empleado">No de empleado</string>
+    <string name="email_usuario">Email</string>
+    <string name="usuario_pass">Contraseña</string>
+    <string name="button_sesion">ENTRAR</string>
+    <string name="button_validar">VALIDAR</string>
+    <string name="message_sesion">Ingresa los datos para iniciar sesión</string>
+    <string name="remember_user">RECORDAR MI USUARIO</string>
+    <string name="forget_pass">Si olvidaste tu contraseña ingresa a http://idm.telcel.com/identity o escribe un correo a desaweb.ing@mail.telcel.com</string>
+
+    <string name="general_info">INFORMACIÓN GENERAL</string>
+
+    <string name="install_tapps">Instalación SMA Android</string>
+    <string name="message_tapps">Para usar la aplicación Precio Inteligente es necesario tener instalada la aplicación Tapps, ¿deseas instalarla?</string>
+
+    <string name="detalles_plan">DETALLES DEL PLAN</string>
+
+    <string name="marca_name">Marca</string>
+    <string name="modelo_name">Modelo</string>
+    <string name="color_name">Color (variante)</string>
+
+    <string name="generar_name">GENERAR</string>
+    <string name="colocar_name">COLOCAR</string>
+
+    <string name="marca_equipo">Seleccione la marca del equipo</string>
+    <string name="modelo_equipo">Seleccione un equipo</string>
+    <string name="plan_name">Plan</string>
+    <string name="message_plan">Selecciona el plan que se va a mostrar con el equipo</string>
+
+    <string name="sv_modelo">Buscar por modelo o clave</string>
+    <string name="sv_equipo">Buscar por clave o descripción</string>
+
+    <string name="precio_name">Precio </string>
+    <string name="inteligente_name">Inteligente </string>
+
+    <string name="quitar_preciador">Quitar Preciador</string>
+    <string name="button_quitar">QUITAR</string>
+    <string name="button_aceptar">ACEPTAR</string>
+
+    <string name="title_download">Descargando TAPPS</string>
+    <string name="percent_name">%</string>
+    <string name="zero_name">0</string>
+
+    <string name="error_red_name">¡Ocurrió un error!</string>
+    <string name="button_red_name">ENTENDIDO</string>
+
+    <string name="error_server_name">Error con el servidor</string>
+    <string name="error_message_name">Hubo un problema con el servidor inténtelo más tarde.</string>
+
+    <string name="preciador_listo">¡Preciador listo!</string>
+
+    <string name="preciador_sin_planes">Preciador sin planes</string>
+    <string name="validando_datos">Validacion de datos</string>
+    <string name="privacy_police">Politica de Privacidad</string>
+    <string name="meesage_privacy_police">Tenemos actualizada nuestra politica de privacidad</string>
+
+    <string name="permission_android">Permiso Android 5.0</string>
+    <string name="message_permission_android">En Android 5.0 o mas, usted necesita el permiso de acceso de usos.</string>
+
+    <string name="campo_gridview">campo gridview</string>
+
+    <string name="message_lock_apps">Apps Recomendadas para Bloquear</string>
+    <string name="next_onboarding">SIGUIENTE</string>
+    <string name="comenzar_onboarding">COMENZAR</string>
+
+    <string name="example_item_modelo">X64GB</string>
+    <string name="example_item_equipos">Espacio Libre</string>
+
+    <string name="text_viewpager_one">Telcel a 24 meses Máx Sin Límite 6501</string>
+    <string name="pago_financiado">Pago inicial financiado desde (</string>
+    <string name="pago_financiado_footer">Total mensual (plan + equipo):$669.72</string>
+    <string name="terminos_condiciones">TÉRMINOS Y CONDICIONES</string>
+    <string name="plazo_viewpager_two">Plazo a 24 meses</string>
+    <string name="plazo_view_two_title">Telcel a 24 meses Máx Sin Límite 6501</string>
+    <string name="plazo_view_two_description">Pago inicial de contado:</string>
+    <string name="plazo_view_two_footer">Total mensual por servicio:$669.72</string>
+    <string name="plazo_view_two_desglose">DESGLOSE DE COSTOS</string>
+    <string name="plazo_view_three_title">12 pagos mensuales de:</string>
+    <string name="plazo_view_three_paid">Pago total fianciado:</string>
+    <string name="plazo_view_three_more_inf">MÁS INFORMACIÓN</string>
+    <string name="plazo_view_four_paid">Pago de contado:</string>
+
+    <string name="preciador_unico">Preciador Único</string>
+    <string name="preciador_soporte">Soporte</string>
+    <string name="bienvenido_drawer">Bienvenido</string>
+
+    <string name="update_precio">Actualización Precio Inteligente</string>
+    <string name="update_tapps">Actualización SMA Android</string>
+    <string name="message_update_precio">Existe una nueva versión de Precio Inteligente, favor de aceptar la actualización.</string>
+    <string name="message_update_tapps">Existe una nueva versión de TAPPS, favor de aceptar la actualización.</string>
+
+    <string name="text_contado">Contado</string>
+    <string name="text_vista_previa">Vista Previa</string>
+    <string name="text_modelos">Modelo</string>
+    <string name="text_marcas">Marca</string>
+    <string name="text_colores">Color (variante)</string>
+
+    <string name="text_vacio">Vacio</string>
+    <string name="text_info_marca">Por favor seleccione una Marca, para continuar</string>
+    <string name="text_info_modelos">Por favor seleccione un Modelo, para continuar</string>
+    <string name="text_info_error">Por favor rellene todos los campos</string>
+
+    <string name="input_credentials">Ingresa tus credenciales</string>
+    <string name="validando_credenciales">Validando credenciales</string>
+    <string name="wait_retrofit">Espera un momento...</string>
+
+    <string name="wait_modelos">Cargando Modelos</string>
+    <string name="wait_marcas">Cargando Marca</string>
+    <string name="wait_preciador">Construyendo preciador</string>
+    <string name="wait_sesion">Cerrando sesión</string>
+    <string name="wait_configuraciones" translatable="false">Abriendo modo retail</string>
+
+    <string name="name_login">Login</string>
+    <string name="name_asesor_colocado">Asesor coloca preciador</string>
+    <string name="name_remote_colocado">RemoteConfig valida preciador</string>
+    <string name="name_celular_colocado">Celular coloca preciador</string>
+    <string name="name_sin_datos">Sin Datos</string>
+
+    <string name="name_mode_retail">Modo Retail</string>
+    <string name="description_mode_retail">Se ha activado el modo retail \nEste bloquea aplicaciones del \nequipo para evitar modificaciones \nen la configuración</string>
+    <string name="description_mode_retail_fragment">Podras evitar modificaciones \nen la configuracion del equipo \npor parte de los clientes</string>
+
+    <string name="id_imei">ID/IMEI:</string>
+    <string name="imei_not_found">IMEI No se ha encontrado</string>
+    <string name="languages_list">
+        Español, Inglés, Portugués, Chino
+    </string>
+    <string name="accesiblity_text_spanish">Para escuchar en español, presiona la pantalla una vez</string>
+    <string name="accesiblity_text_english">For english tap twice</string>
+    <string name="accesiblity_text_portuguese">Para português pressione 3 vezes</string>
+    <string name="accesiblity_text_chinese">中國水龍頭4次</string>
+    <string name="wrapper_info">Mantén presionada la pantalla para desactivar</string>
+    <string name="exhibition_only_device">Equipo sólo de exhibición</string>
+    <string name="unavailable_device">Agotado</string>
+    <string name="menu_accessibility">Accesibilidad</string>
+    <string name="accessibility_info_config">Habilita el modo accesibilidad para activar el lector de voz, esta opción se desactivara desde este mismo apartado.</string>
+    <string name="accessibility_switch_config">Modo accesibilidad</string>
+
+    <string name="fullDate">Vigencia a partir del [initDay] de [initMonth] del [initYear] y hasta [endDay] de [endMonth] del [endYear].</string>
+    <string name="partialDate">Vigencia a partir del [day] de [month] del [year].</string>
+    <string name="previousPrice">De:</string>
+    <string name="promotion">Promoción</string>
+
+    <string name="desgloce_plan_prepago_titulo">MÁS INFORMACIÓN</string>
+    <string name="desgloce_plan_prepago_pagos"> pagos mensuales</string>
+    <string name="desgloce_plan_prepago_mensualidad">Mensualidad</string>
+    <string name="desgloce_plan_prepago_enganche">Enganche</string>
+    <string name="desgloce_plan_prepago_total">Pago total financiado</string>
+
+    <string-array name="oldStringStart">
+        <item>[initDay]</item>
+        <item>[initMonth]</item>
+        <item>[initYear]</item>
+    </string-array>
+
+    <string-array name="oldStringEnd">
+        <item>[endDay]</item>
+        <item>[endMonth]</item>
+        <item>[endYear]</item>
+    </string-array>
+
+    <string-array name="oldStringDate">
+        <item>[day]</item>
+        <item>[month]</item>
+        <item>[year]</item>
+    </string-array>
+    <string name="plazo_pago">pagos</string>
+    <string name="pago_total">Pago total financiado: </string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="plan_details_service">Servicio</string>
+    <string name="plan_details_detail">Detalle</string>
+    <string name="plan_details_charge_col">Cargo mensual por servicio</string>
+    <string name="plan_details_minutes_col">Minutos incluidos</string>
+    <string name="plan_details_sms_col">SMS incluidos</string>
+    <string name="plan_details_capacity_col">Capacidad de datos incluida</string>
+    <string name="plan_details_promotion_col">MB de promoción</string>
+    <string name="plan_details_social_col">WhatsApp, Facebook y Twitter</string>
+    <string name="plan_details_subtitle">Detalles del plan</string>
+    <string name="device_example_title" translatable="false">SAMSUNG LTE SM-J730GM GALAXY J7 PRO</string>
+
+    <!--
+    Mensajes de espera
+    -->
+    <string name="waiting_products">Por favor, espere</string>
+    <string name="load_products">Cargando productos...</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+</resources>

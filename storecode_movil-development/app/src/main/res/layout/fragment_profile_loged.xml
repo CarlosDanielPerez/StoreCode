@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ProfileLogedFragment">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ivProfile"
+            android:layout_height="@dimen/a100dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/empty_avatar"
+            android:layout_width="90dp" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+
+
+            android:textColor="@color/colorPrimary"
+            ></TextView>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="24dp"
+            ></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/ln_complete_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btn_complete_profile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_person"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_complete_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Completar perfil"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_update_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btn_update_products"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_update"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_update_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Editar perfil"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ln_sell_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btn_sell_products"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_shop_bag"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_product_in_sell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Productos en venta"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btn_payment"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_payments"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Medios de pago"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btnSell"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_shop"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_sell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Vender productos"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_miscompras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btn_miscompras"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_shopping_bag"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_mis_compras"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Mis compras"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_mercadopago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:layout_gravity="clip_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <ImageButton
+                android:id="@+id/btnMercadoPago"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".18"
+                android:background="@drawable/ic_mercado_pago"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tvMercadoPago"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:text="Datos de mercado pago"
+
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/a15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.HomeNoLogedFragment">
+
+
+
+    <SearchView
+        android:id="@+id/txtBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar Productos"
+        android:iconifiedByDefault="false"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zapatos"/>
+
+
+    <LinearLayout
+        android:id="@+id/lyBoton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenis" />
+
+        <Button
+            android:id="@+id/btnSandalias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Sandalias" />
+        <Button
+            android:id="@+id/btnBotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Botas" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyBoton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCasual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Zapato Casual" />
+        <Button
+            android:id="@+id/btnBebes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Bebés" />
+        <Button
+            android:id="@+id/btnTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Todo" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <SearchView
+        android:id="@+id/svHomeNoLoged"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:queryHint="Encuentra tu producto"
+        android:background="#E6E9F5"
+        android:iconifiedByDefault="false"
+        android:searchHintIcon="@drawable/ic_search"
+        android:visibility="gone">
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/margin_h3"
+        android:id="@+id/rv_all_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rlBaseHomeNoLoged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:alpha="0.4"
+            />
+        <ProgressBar
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.CreateAccountFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnReturn"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Salir"
+                android:background="@color/colorBackground"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lato"
+                android:text="Datos esenciales para tu perfil"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/textTitle_24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColorHint="@color/blanco"
+                    android:backgroundTint="@color/blanco"
+                    android:hint="Escribe tu nombre"
+                    >
+
+                    <!--android:id="@+id/et_no_empleado"-->
+                    <EditText
+                        android:id="@+id/editTextUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="80"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_h3"
+                        android:textColor="@color/blanco"
+                        android:backgroundTint="@color/text_layout_line"
+                        android:textSize="@dimen/text_h2"
+                        tools:ignore="LabelFor,SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColorHint="@color/blanco"
+                    android:backgroundTint="@color/blanco"
+                    android:hint="Escribe tu apellido paterno"
+                    >
+
+                    <!--android:id="@+id/et_no_empleado"-->
+                    <EditText
+                        android:id="@+id/editTextApellidoPaterno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="80"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_h3"
+                        android:textColor="@color/blanco"
+                        android:backgroundTint="@color/text_layout_line"
+                        android:textSize="@dimen/text_h2"
+                        tools:ignore="LabelFor,SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColorHint="@color/blanco"
+                    android:backgroundTint="@color/blanco"
+                    android:hint="Escribe tu email"
+                    >
+
+                    <!--android:id="@+id/et_no_empleado"-->
+                    <EditText
+                        android:id="@+id/editTextUserEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="80"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_h3"
+                        android:textColor="@color/blanco"
+                        android:backgroundTint="@color/text_layout_line"
+                        android:textSize="@dimen/text_h2"
+                        tools:ignore="LabelFor,SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/blanco"
+                        android:backgroundTint="@color/blanco"
+                        android:hint="@string/usuario_pass"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        >
+
+                        <com.subhrajyoti.passwordview.PasswordView
+                            android:id="@+id/editTextPass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="80"
+                            android:backgroundTint="@color/text_layout_line"
+                            android:fontFamily="@font/telcel_nova_media_otf"
+                            android:imeOptions="actionDone"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_h3"
+                            android:textColor="@color/blanco"
+                            android:textSize="@dimen/text_h2"
+                            app:eyeTint="@color/blanco"
+                            app:strikeThrough="true"
+                            tools:ignore="SpUsage" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/blanco"
+                        android:backgroundTint="@color/blanco"
+                        android:hint="Confirma tu contraseña"
+                        android:fontFamily="@font/telcel_nova_media_otf"
+                        >
+
+                        <com.subhrajyoti.passwordview.PasswordView
+                            android:id="@+id/editTextPassConfirm"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="80"
+                            android:fontFamily="@font/telcel_nova_media_otf"
+                            android:imeOptions="actionDone"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_h3"
+                            android:textColor="@color/blanco"
+                            android:backgroundTint="@color/text_layout_line"
+                            android:textSize="@dimen/text_h2"
+                            app:eyeTint="@color/blanco"
+                            app:strikeThrough="true"
+                            tools:ignore="SpUsage" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginVertical="24dp"
+                    android:id="@+id/btnCreateAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@color/blanco"
+                    android:fontFamily="@font/telcel_nova_media_otf"
+                    android:radius="@dimen/margin_h4"
+                    android:text="Crear cuenta"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="@dimen/text_h2"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_loged"
+    app:startDestination="@id/navHomeLogedFragment">
+
+    <fragment
+        android:id="@+id/navHomeLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.HomeLogedFragment"
+        android:label="fragment_home_loged"
+        tools:layout="@layout/fragment_home_loged" >
+        <action
+            android:id="@+id/HomeLogedToProductDetailAction"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navCartLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.CartLogedFragment"
+        android:label="fragment_cart_loged"
+        tools:layout="@layout/fragment_cart_loged" >
+        <action
+            android:id="@+id/mostrarmodospago"
+            app:destination="@+id/optionsPayment"
+            app:popUpTo="@id/navCartLogedFragment"
+            app:enterAnim="@anim/fade_in"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/optionsPayment"
+        android:name="com.example.storecode_android.view.fragments.OptionsPaymentFragment"
+        android:label="fragment_options_payment"
+        tools:layout="@layout/fragment_options_payment">
+
+    </fragment>
+
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/navProfileLogedFragment"
+        android:name="com.example.storecode_android.view.fragments.ProfileLogedFragment"
+        android:label="fragment_profile_loged"
+        tools:layout="@layout/fragment_profile_loged" >
+        <action
+            android:id="@+id/toRegisterProduct"
+            app:destination="@id/registerProductFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/toProductOnSale"
+            app:destination="@id/productsOnSaleFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/toMyShoppinFragment"
+            app:destination="@id/myShoppinFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/navProfileLogedFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toDataMercadoPago"
+            app:destination="@id/dataMercadoPagoFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.storecode_android.view.fragments.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="respObtenerProducto"
+            app:argType="com.example.storecode_android.entidades.RespObtenerProducto" />
+        <action
+            android:id="@+id/productDetail_to_homeLoged"
+            app:destination="@id/navHomeLogedFragment"
+            app:popUpTo="@id/navHomeLogedFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerProductFragment"
+        android:name="com.example.storecode_android.view.fragments.RegisterProductFragment"
+        android:label="fragment_register_product"
+        tools:layout="@layout/fragment_register_product" >
+        <action
+            android:id="@+id/toProfileLogedFragment"
+            app:destination="@id/navProfileLogedFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/navProfileLogedFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsOnSaleFragment"
+        android:name="com.example.storecode_android.view.fragments.ProductsOnSaleFragment"
+        android:label="fragment_products_on_sale"
+        tools:layout="@layout/fragment_products_on_sale" >
+        <action
+            android:id="@+id/action_productsOnSaleFragment_to_navProfileLogedFragment"
+            app:destination="@id/navProfileLogedFragment"
+            app:popEnterAnim="@anim/fade_out"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/navProfileLogedFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toUpdateProduct"
+            app:destination="@id/updateProductFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProductFragment"
+        android:name="com.example.storecode_android.view.fragments.UpdateProductFragment"
+        android:label="fragment_update_product"
+        tools:layout="@layout/fragment_update_product" >
+        <action
+            android:id="@+id/action_updateProductFragment_to_productsOnSaleFragment"
+            app:destination="@id/productsOnSaleFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="product"
+            app:argType="com.example.storecode_android.entidades.RespGetProductByUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/myShoppinFragment"
+        android:name="com.example.storecode_android.view.fragments.MyShoppinFragment"
+        android:label="fragment_item_myshopping_list"
+        tools:layout="@layout/fragment_item_myshopping_list" >
+        <action
+            android:id="@+id/toProfileLogedFragment"
+            app:destination="@id/navProfileLogedFragment"
+            app:popEnterAnim="@anim/fade_out"
+            app:popUpTo="@id/navProfileLogedFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/toPurchasedDetailFragment"
+            app:destination="@id/purchasedDetailFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataMercadoPagoFragment"
+        android:name="com.example.storecode_android.view.fragments.DataMercadoPagoFragment"
+        android:label="fragment_data_mercado_pago"
+        tools:layout="@layout/fragment_data_mercado_pago" >
+        <action
+            android:id="@+id/toNavProfileLogedFragment"
+            app:destination="@id/navProfileLogedFragment"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchasedDetailFragment"
+        android:name="com.example.storecode_android.view.fragments.PurchasedDetailFragment"
+        android:label="fragment_purchased_detail"
+        tools:layout="@layout/fragment_purchased_detail" >
+        <action
+            android:id="@+id/toMyShoppingFragment"
+            app:destination="@id/myShoppinFragment"
+            app:popUpTo="@id/myShoppinFragment"
+            app:popEnterAnim="@anim/fade_out"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="Purchase"
+            app:argType="com.example.storecode_android.entidades.Purchase" />
+    </fragment>
+</navigation>

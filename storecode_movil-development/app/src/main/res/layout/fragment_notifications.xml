@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.NotificationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/contenedor_principal"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_fondo_notificaciones_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin_h3"
+                android:id="@+id/activity_notificaciones_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_fondo_notificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageButton
+                android:background="@color/colorBackground"
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_notification"
+                android:layout_marginBottom="@dimen/margin_h1"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:layout_marginLeft="@dimen/margin_h1"
+                android:layout_marginRight="@dimen/margin_h1"
+                android:fontFamily="@font/lato_regular_otf"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Descripción de notificaciones"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/text_h2"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08"
+            android:gravity="bottom|center"
+            android:layout_marginBottom="@dimen/a15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_bolt_otf"
+                android:text="Soporte técnico"
+                android:textColor="@color/blanco_gris"
+                android:layout_marginLeft="@dimen/a25dp"    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_h4"
+    >
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_background_cardview"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/a8dp"
+
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="6dp"
+                    android:id="@+id/ivProductPurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/a100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/no_image"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/tvNameProductPurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del producto"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:layout_marginTop="@dimen/a8dp"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/tvDescriptionPurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion del producto"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:textColor="@color/negro"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/tvPricePurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio del producto"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBackground"
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:id="@+id/tvQuantityPurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_vertical"
+                    android:text="Cantidad"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/negro"
+                    android:visibility="gone"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+include ':px-addons'
+include ':px-services'
+include ':px-checkout'
+include ':app'
+rootProject.name = "Storecode_Android"
